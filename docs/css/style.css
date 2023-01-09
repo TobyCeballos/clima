@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+}
+
+
+.background-cloudy {
+    background-image: url('../img/nublado.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.background-rain {
+    background-image: url('../img/rain.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.background-clear {
+    background-image: url('../img/clear.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card__container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.card__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px 0 50px;
+}
+
+.more__card__data {
+    display: flex;
+    flex-direction: column;
+    padding:0 50px 50px 50px;
+}
+
+.more__card__data p{
+    margin: 20px 0 10px 0;
+    line-height: 1px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__divisor {
+    margin: auto;
+    height: 1px;
+    width: 90%;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.city {
+    font-size: 23px;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+.temperature {
+    font-weight: 300;
+    line-height: 65px;
+    font-size:65px;
+}
+
+.real__feel {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.icon__weather {
+    font-size: 120px!important;
+    line-height: 100px!important;
+}
+
+
+
+.card__weather{
+    margin: 25vh auto;
+    color: rgb(221, 221, 221);
+    width: 30%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    background: rgba(119, 162, 170, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+
+/* SPINNER */
+
+.spinner__container {
+    z-index: 1999;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/sky.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.6);
+    border-left-color: transparent;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 2000;
+    animation: spin 1s ease-in-out infinite;
+    opacity: 1;
+}
+
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
