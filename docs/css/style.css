@@ -128,6 +128,25 @@
     opacity: 1;
 }
 
+.searchbox {
+    width:90%;
+    border-radius:50px;
+    border:none;
+    margin-left: 4px;
+    opacity: 0.7;
+    padding: 10px;
+}
+
+.search {
+    margin-top: 10px; 
+    background:rgba(255, 255, 255, 0.356);
+    width:30%;
+    height: 40px;
+    margin-left: 35%;
+    display: flex;
+    border-radius: 50px;
+    padding: 4px;
+}
 
 @keyframes spin {
     0% {
@@ -138,3 +157,24 @@
       transform: rotate(360deg);
     }
   }
+
+  @media (max-width: 1450px) {
+    .icon__weather{
+        font-size: 80px!important;
+        line-height: 60px!important;
+    }
+    .temperature{
+        font-weight: 300;
+        line-height: 45px;
+        font-size:45px;
+    }
+}
+@media (max-width: 1100px) {
+    .card__weather{
+        width: 70%;
+    }
+    .search{
+        width: 70%;
+        margin-left: 15%;
+    }
+}
