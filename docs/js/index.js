@@ -85,13 +85,3 @@ const form = document.getElementById('search')
 const searchbox = document.getElementById('searchbox')
 
 form.addEventListener('submit', onSubmit, true)
-
-
-//const city = 'london'
-//const fetchWeather = async() => {
-//    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
-//    const data = await fetch(URL)
-//    console.log(data)
-//}
-//
-//document.addEventListener('DOMContentLoaded', fetchWeather())
